@@ -1,8 +1,0 @@
-
-# Positionally restricted motif scanning and search against TFBS database 
-rsat peak-motifs -v 1 -i $f -disco positions -top_peaks 0 -nmotifs 5 -minol 6 -maxol 7 -1str -origin center -motif_db footprintDB-plants transfac footprintDB.plants.motif.tf -scan_markov 1 -r_plot -img_format png -prefix peak-motifs -noov
-
-#Radial clustering
-rsat matrix-clustering -v 1 -max_matrices 500 -title '4DAG_200bp_core_promoters' -hclust_method average -calc sum -metric_build_tree 'Ncor' -lth w 5 -lth cor 0.6 -lth Ncor 0.4 -label_in_tree consensus
-
-
